@@ -1,13 +1,13 @@
-let countyURL =
+const countyURL =
   'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json';
-let educationURL =
+const educationURL =
   'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json';
 
 let countyData;
 let educationData;
 
-let canvas = d3.select('#canvas');
-let tooltip = d3.select('#tooltip');
+const canvas = d3.select('#canvas');
+const tooltip = d3.select('#tooltip');
 
 let drawMap = () => {
   canvas

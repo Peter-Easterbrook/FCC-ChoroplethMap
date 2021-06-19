@@ -31,7 +31,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -85,7 +85,7 @@ h4 {
   margin-bottom: 0.6rem;
   background-color: #000;
   border: 1px solid #fff;
-  padding: 1rem 1.4rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
@@ -131,7 +131,7 @@ g {
   margin-top: 0.6rem;
   margin-bottom: 2rem;
 }
-#legend {
+.legend {
   color: #6a7b8d;
   font-size: 1rem;
   text-align: center;
@@ -139,14 +139,18 @@ g {
   max-width: 14rem;
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
+  position: absolute;
+  right: 10%;
 }
-#description a {
+.description a {
   text-decoration: none;
   color: lightsalmon;
   text-align: center;
+  font-weight: 200;
 }
 
-#container {
+.container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
