@@ -4,10 +4,7 @@
 *::after {
   box-sizing: border-box;
 }
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #8b92a5 black;
-}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
