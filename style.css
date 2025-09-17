@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 #thpace {
-  position: absolute;
+  position: fixed;
   z-index: -10;
   top: 0;
   left: 0;
@@ -89,6 +89,7 @@ g {
 }
 
 #tooltip {
+  position: absolute;
   visibility: hidden;
   margin-top: 1rem;
   color: #fff;
@@ -121,6 +122,12 @@ g {
   margin-bottom: 2.4rem;
   position: absolute;
   right: 10%;
+}
+.description {
+  margin-top: 4rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  font-weight: 300;
+  text-align: center;
 }
 .description a {
   text-decoration: none;

@@ -1,5 +1,6 @@
 const countyURL =
   'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json';
+
 const educationURL =
   'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json';
 
@@ -44,12 +45,14 @@ let drawMap = () => {
       let percentage = county['bachelorsOrHigher'];
       return percentage;
     })
-    .on('mouseover', (countyDataItem) => {
+    .on('mouseover', (event, countyDataItem) => {
       tooltip.transition().style('visibility', 'visible');
-      let id = countyDataItem['id'];
       let county = educationData.find((item) => {
-        return item['fips'] === id;
+        return item['fips'] === countyDataItem.id;
       });
+      tooltip
+        .style('left', event.pageX - 200 + 'px')
+        .style('top', event.pageY - 28 + 'px');
       tooltip.text(
         county['fips'] +
           ' - ' +
@@ -62,7 +65,7 @@ let drawMap = () => {
       );
       tooltip.attr('data-education', county['bachelorsOrHigher']);
     })
-    .on('mouseout', (countyDataItem) => {
+    .on('mouseout', (event, countyDataItem) => {
       tooltip.transition().style('visibility', 'hidden');
     });
 };
