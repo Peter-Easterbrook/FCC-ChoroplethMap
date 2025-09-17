@@ -91,12 +91,10 @@ g {
 #tooltip {
   position: absolute;
   visibility: hidden;
-  margin-top: 1rem;
   color: #fff;
   font-size: 1.4rem;
   height: 3.5rem;
   width: 30rem;
-  margin-bottom: 0.6rem;
   background-color: #000;
   border: 1px solid #fff;
   padding: 0.6rem 1.2rem;
